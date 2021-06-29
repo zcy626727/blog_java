@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zcy.blog.mapper.ArticleMapper">
+    <resultMap id="Article" type="com.zcy.blog.entity.Article">
+        <id column="a_id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="des" property="des"/>
+        <result column="content" property="content"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="c_id" property="cId"/>
+        <result column="avatar" property="avatar"/>
+        <result column="cName" property="cName"/>
+        <collection property="tags" ofType="com.zcy.blog.entity.TagOfArticle" select="com.zcy.blog.mapper.TagOfArticleMapper.getTagsByAId" column="a_id">
+            <id column="id" property="id"/>
+            <result column="name" property="name"/>
+        </collection>
+    </resultMap>
+
+    <cache eviction="LRU" type="com.zcy.blog.config.redis.RedisCache"></cache>
+
+    <select id="getArticleListPage" parameterType="int" resultMap="Article">
+        SELECT a.id AS a_id,a.title,a.des,a.published,a.deleted,a.create_time,a.update_time,a.c_id,t.id AS t_id,t.`name` AS c_name
+        FROM (SELECT * FROM `article` LIMIT #{page},#{size}) a
+        LEFT JOIN `article_tag` ta ON a.`id`=ta.`a_id`
+        LEFT JOIN `tag_of_article` t ON t.`id`=ta.`t_id`
+    </select>
+
+    <select id="getArticleById" parameterType="string" resultMap="Article">
+        SELECT a.id AS a_id,a.title,a.content,a.des,a.published,a.deleted,a.create_time,a.update_time,a.c_id,a.avatar
+        FROM `article` a
+        WHERE a.id = #{id}
+    </select>
+
+    <select id="getArticleByListQuery" parameterType="com.zcy.blog.entity.pojo.ArticleListQuery" resultMap="Article">
+        SELECT DISTINCT a.id a_id,a.title,a.des,a.published,a.deleted,a.create_time,a.update_time,a.c_id,a.avatar
+        FROM `article` a
+        LEFT JOIN `article_tag` ta ON a.`id`=ta.`a_id`
+        <where>
+            <if test="articleListQuery.title!=null">
+                and a.title LIKE "%"#{articleListQuery.title}"%"
+            </if>
+            <if test="articleListQuery.categoryId!=null">
+                and a.c_id = #{articleListQuery.categoryId}
+            </if>
+            <if test="articleListQuery.createTimeFrom!=null and articleListQuery.createTimeTo!=null">
+                and create_time BETWEEN #{articleListQuery.createTimeFrom} AND #{articleListQuery.createTimeTo}
+            </if>
+            <foreach collection="articleListQuery.tags" separator="or" item="tagId" open="and (" close=")">
+                ta.`t_id` = #{tagId}
+            </foreach>
+            <if test="articleListQuery.published!=null">
+                <if test="articleListQuery.published == 'true'">
+                    and a.published = true
+                </if>
+                <if test="articleListQuery.published == 'false'">
+                    and a.published = false
+                </if>
+            </if>
+            <if test="articleListQuery.deleted!=null">
+                <if test="articleListQuery.deleted == 'true'">
+                    and a.deleted = true
+                </if>
+                <if test="articleListQuery.deleted == 'false'">
+                    and a.deleted = false
+                </if>
+            </if>
+        </where>
+        <if test="articleListQuery.order!=null">
+            Order By
+            <if test="articleListQuery.order=='update_time'">
+                a.update_time
+            </if>
+            <if test="articleListQuery.order=='create_time'">
+                a.create_time
+            </if>
+            DESC
+        </if>
+    </select>
+
+    <select id="getNewArticleList" parameterType="com.zcy.blog.entity.pojo.ArticleListQuery" resultMap="Article">
+        SELECT DISTINCT a.id a_id,a.title,a.des,a.published,a.deleted,a.create_time,a.update_time,a.c_id,c.name AS cName
+        FROM `article` a
+        LEFT JOIN category_of_article c on a.c_id = c.id
+        LEFT JOIN `article_tag` ta ON a.`id`=ta.`a_id`
+        <where>
+            <if test="published!=null">
+                <if test="published == 'true'">
+                    and a.published = true
+                </if>
+                <if test="published == 'false'">
+                    and a.published = false
+                </if>
+            </if>
+            <if test="deleted!=null">
+                <if test="deleted == 'true'">
+                    and a.deleted = true
+                </if>
+                <if test="deleted == 'false'">
+                    and a.deleted = false
+                </if>
+            </if>
+            <if test="order!=null">
+                Order By
+                <if test="order=='update_time'">
+                    a.update_time
+                </if>
+                <if test="order=='create_time'">
+                    a.create_time
+                </if>
+                DESC
+            </if>
+            <if test="limit!=null">
+                LIMIT #{limit}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
