@@ -74,5 +74,11 @@ public class Article implements Serializable {
     @TableField(exist = false)
     private String avatarUrl;
 
+    @TableField(exist = false)
+    private String watchCount;
+
+    @TableField(exist = false)
+    private String favourCount;
+
 
 }

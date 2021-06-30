@@ -4,6 +4,8 @@ package com.zcy.blog.controller;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.zcy.blog.utils.Result;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/test")
 public class test2Controller {
+
     @PostMapping("/post")
     public String reg(@RequestParam String param){
         return "服务端收到请求，传递的参数为："+param;

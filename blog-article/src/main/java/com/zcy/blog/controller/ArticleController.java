@@ -15,10 +15,12 @@ import com.zcy.blog.service.IllustrationOfArticleService;
 import com.zcy.blog.utils.FileUtil;
 import com.zcy.blog.utils.Result;
 import com.zcy.blog.utils.ResultArgs;
+import org.apache.velocity.runtime.directive.Foreach;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 import org.springframework.web.bind.annotation.*;
@@ -52,6 +54,9 @@ public class ArticleController {
 
     @Autowired
     private IllustrationOfArticleService illustrationService;
+
+    @Autowired
+    RedisTemplate redisTemplate;
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -95,6 +100,14 @@ public class ArticleController {
         IPage<Article> res = articleService.getArticleByListQuery(articleListQuery);
         long current = res.getCurrent();
         List<Article> articleList = res.getRecords();
+
+        for (Article a :articleList) {
+            a.setWatchCount(articleService.getWatchCountById(a.getId()));
+            a.setFavourCount(articleService.getFavourCountById(a.getId()));
+            logger.info("注入文章观看和点赞数，文章："+articleService.getWatchCountById(a.getId())+"，点赞："+articleService.getFavourCountById(a.getId()));
+        }
+
+
         long size = res.getSize();
         long total = res.getTotal();
         for (Article article : articleList){
@@ -104,6 +117,7 @@ public class ArticleController {
             }
         }
         int count = articleService.count();
+        
         return gson.toJson(new Result(ResultArgs.SUCCESS_CODE,ResultArgs.SUCCESS_MSG)
                 .addKV("articleList",articleList).addKV("total",count).addKV("total",total).addKV("size",size).addKV("current",current));
     }
@@ -217,13 +231,37 @@ public class ArticleController {
     public String getArticleById(@RequestParam("id") String id){
         Article article = articleService.getArticleById(id);
         String avatar = article.getAvatar();
-        if(avatar!="无"&&avatar!=null){
+        if(!avatar.equals("无") &&avatar!=null){
             article.setAvatarUrl(FileUtil.getArticleAvatarUrl()+avatar);
         }
         if(article!=null){
             return gson.toJson(new Result(ResultArgs.SUCCESS_CODE,ResultArgs.SUCCESS_MSG).addKV("article",article));
         }
         return gson.toJson(new Result(ResultArgs.FAILURE_CODE,ResultArgs.FAILURE_MSG));
+    }
+
+
+    /**
+     * 增加观看数
+     * @param id
+     * @return
+     */
+    @GetMapping("/incWatchCount")
+    public String incWatchCount(@RequestParam("id") String id){
+        articleService.incrementWatchCountById(id);
+        logger.info("增加观看数成功");
+        return "增加观看数成功";
+    }
+
+    /**
+     * 增加点赞数
+     * @param id
+     * @return
+     */
+    @GetMapping("/incFavourCount")
+    public String incFavourCount(@RequestParam("id") String id){
+        articleService.incrementFavourCountById(id);
+        return "增加点赞数成功";
     }
 
     /**

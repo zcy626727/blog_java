@@ -37,13 +37,11 @@ public class RedisCache implements Cache {
     public void putObject(Object key, Object value) {
         RedisTemplate redisTemplate = getRedisTemplate();
         ValueOperations opsForValue = redisTemplate.opsForValue();
-        System.out.println(key+": key");
-        System.out.println(key.toString()+": key.toString()");
-        System.out.println(value+": value");
-        System.out.println(value.toString()+": value.toString()");
-        opsForValue.set(key.toString(),value,EXPIRE_TIME_IN_MINUTES, TimeUnit.MINUTES);
-        System.out.println("结果成功放入缓存 and "+"key = " +"\n"+ key + "value = " + value);
-        System.out.println(opsForValue.get(key.toString()));
+
+        if(value!=null){
+            opsForValue.set(key.toString(),value,EXPIRE_TIME_IN_MINUTES, TimeUnit.MINUTES);
+            System.out.println("结果成功放入缓存 and "+"key = " +"\n"+ key + "value = " + value);
+        }
     }
     /**
      * Get cached query result to redis

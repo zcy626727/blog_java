@@ -2,7 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zcy.blog.mapper.CategoryOfArticleMapper">
 
-    <cache eviction="LRU" type="com.zcy.blog.config.redis.RedisCache"></cache>
+<!--    <cache eviction="LRU" type="com.zcy.blog.config.redis.RedisCache"></cache>-->
+    <cache-ref namespace="com.zcy.blog.mapper.CategoryOfArticleMapper"/>
 
     <select id="getCategoryListPage" resultType="com.zcy.blog.entity.CategoryOfArticle">
         SELECT DISTINCT	c.`id`,c.`name`,c.`started`,c.`level`,c.`f_id`,c.article_num articleNum

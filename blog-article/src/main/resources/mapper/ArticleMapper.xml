@@ -18,7 +18,8 @@
         </collection>
     </resultMap>
 
-    <cache eviction="LRU" type="com.zcy.blog.config.redis.RedisCache"></cache>
+<!--    <cache eviction="LRU" type="com.zcy.blog.config.redis.RedisCache"></cache>-->
+    <cache-ref namespace="com.zcy.blog.mapper.ArticleMapper"/>
 
     <select id="getArticleListPage" parameterType="int" resultMap="Article">
         SELECT a.id AS a_id,a.title,a.des,a.published,a.deleted,a.create_time,a.update_time,a.c_id,t.id AS t_id,t.`name` AS c_name
@@ -116,6 +117,5 @@
             </if>
         </where>
     </select>
-
 
 </mapper>
