@@ -79,6 +79,4 @@ public class Article implements Serializable {
 
     @TableField(exist = false)
     private String favourCount;
-
-
 }

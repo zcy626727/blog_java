@@ -234,6 +234,8 @@ public class ArticleController {
         if(!avatar.equals("无") &&avatar!=null){
             article.setAvatarUrl(FileUtil.getArticleAvatarUrl()+avatar);
         }
+        //设置观看数
+        article.setWatchCount(articleService.getWatchCountById(article.getId()));
         if(article!=null){
             return gson.toJson(new Result(ResultArgs.SUCCESS_CODE,ResultArgs.SUCCESS_MSG).addKV("article",article));
         }
