@@ -29,7 +29,7 @@ public class RedisCache implements Cache {
         return id;
     }
     /**
-     * Put query result to redis
+     * 写入缓存
      * @Param key
      * @Param value
      * */
@@ -40,11 +40,10 @@ public class RedisCache implements Cache {
 
         if(value!=null){
             opsForValue.set(key.toString(),value,EXPIRE_TIME_IN_MINUTES, TimeUnit.MINUTES);
-            System.out.println("结果成功放入缓存 and "+"key = " +"\n"+ key + "value = " + value);
         }
     }
     /**
-     * Get cached query result to redis
+     * 查找缓存
      * @Param key
      * @Return
      * */
@@ -53,11 +52,11 @@ public class RedisCache implements Cache {
         RedisTemplate redisTemplate = getRedisTemplate();
 //        redisTemplate.setHashValueSerializer(new StringRedisSerializer());
         ValueOperations opsForValue = redisTemplate.opsForValue();
-        System.out.println("结果从缓存中获取");
+
         return opsForValue.get(key.toString());
     }
     /**
-     * Remove cached query result to redis
+     * 移除缓存
      * @Param key
      * @Return
      * */
@@ -65,11 +64,10 @@ public class RedisCache implements Cache {
     public Object removeObject(Object key) {
         RedisTemplate redisTemplate = getRedisTemplate();
         redisTemplate.delete(key);
-        System.out.println("从缓存中删除");
         return null;
     }
     /**
-     * Clear this cache instance
+     * 清空缓存
      * */
     @Override
     public void clear() {
@@ -78,7 +76,6 @@ public class RedisCache implements Cache {
             connection.flushDb();
             return null;
         });
-        System.out.println("清空缓存");
     }
 
     @Override

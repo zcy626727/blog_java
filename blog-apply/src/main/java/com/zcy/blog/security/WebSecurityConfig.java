@@ -36,18 +36,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     //redis 操作工具类
     private RedisTemplate redisTemplate;
 
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers("/article/**").permitAll()
+                .antMatchers("/article/**","//**","/blog/**").permitAll()
                 .antMatchers("/category/**").permitAll()
                 .antMatchers("/test/**").permitAll()
                 .antMatchers("/tag/**").permitAll()
                 .antMatchers("/test/test").authenticated()
 //                .antMatchers("/hello").permitAll()//所有请求允许
-//                .antMatchers("/test/admin").hasRole("管理员")//要有管理员权限
+//                .antMatchers("/test/").hasRole("管理员")//要有管理员权限
                 .anyRequest().authenticated()//只要登录就能访问
                 .and().cors().and().csrf().disable()//关闭csrf
                 .formLogin().loginProcessingUrl("/login")//登录请求路径
@@ -108,8 +107,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/api/**","/swagger-ui.html/**","/img/**");
-
+        web.ignoring().antMatchers("/api/**","/swagger-ui.html/**","/img/**","/static/**");
     }
 
 

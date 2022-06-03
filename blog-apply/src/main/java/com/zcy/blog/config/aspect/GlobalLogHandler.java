@@ -36,7 +36,7 @@ public class GlobalLogHandler {
      */
     @Before("log()")
     public void doBefore(JoinPoint joinPoint){
-        logger.info("前置通知执行啦"+joinPoint.getArgs().toString());
+//        logger.info("拦截到请求："+joinPoint.getArgs().toString());
     }
 
 

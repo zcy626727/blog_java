@@ -15,14 +15,14 @@ import java.util.Date;
 class myMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
-        log.info("自动填充时间");
+//        log.info("自动填充时间");
         this.setFieldValByName("createTime",new Date(),metaObject);
         this.setFieldValByName("updateTime",new Date(),metaObject);
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
-        log.info("自动更新时间");
+//        log.info("自动更新时间");
         this.setFieldValByName("updateTime",new Date(),metaObject);
     }
 }

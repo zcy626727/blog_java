@@ -60,7 +60,6 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         //观看数map
         BoundHashOperations watchMap = redisTemplate.boundHashOps(watchKey);
         Object o = watchMap.get(id);
-        System.out.println(o);
         return o==null?"0":o.toString();
     }
 

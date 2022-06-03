@@ -104,7 +104,7 @@ public class ArticleController {
         for (Article a :articleList) {
             a.setWatchCount(articleService.getWatchCountById(a.getId()));
             a.setFavourCount(articleService.getFavourCountById(a.getId()));
-            logger.info("注入文章观看和点赞数，文章："+articleService.getWatchCountById(a.getId())+"，点赞："+articleService.getFavourCountById(a.getId()));
+//            logger.info("注入文章观看和点赞数，文章："+articleService.getWatchCountById(a.getId())+"，点赞："+articleService.getFavourCountById(a.getId()));
         }
 
 
@@ -231,7 +231,7 @@ public class ArticleController {
     public String getArticleById(@RequestParam("id") String id){
         Article article = articleService.getArticleById(id);
         String avatar = article.getAvatar();
-        if(!avatar.equals("无") &&avatar!=null){
+        if(avatar!=null&&!avatar.equals("无")){
             article.setAvatarUrl(FileUtil.getArticleAvatarUrl()+avatar);
         }
         //设置观看数

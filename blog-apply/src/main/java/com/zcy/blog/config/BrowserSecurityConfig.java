@@ -23,7 +23,7 @@ public class BrowserSecurityConfig {
         // 赋值数据源
         jdbcTokenRepository.setDataSource(dataSource);
         // 自动创建表 , 第一次执行会创建，以后要执行就要删除掉！
-//        jdbcTokenRepository.setCreateTableOnStartup(true);
+        jdbcTokenRepository.setCreateTableOnStartup(true);
         return jdbcTokenRepository;
     }
 }

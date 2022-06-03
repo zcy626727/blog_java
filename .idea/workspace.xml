@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b36f3732-300f-483a-a855-98ed11ea3bd4" name="Default Changelist" comment="定时清理文章">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_75.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_65_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_65_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_65_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_65_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_65_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_65_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_engine_core_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/blog-apply.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/blog-apply-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/blog-apply-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/BlogApplyApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/BrowserSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/CorsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/MybatisPlusConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/aspect/GlobalLogHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/handler/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/config/handler/myMetaObjectHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/AccessDeniedHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/AuthenticationEntryPointImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/CustomAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/LoginFailureHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/LoginSuccessHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/LogoutHandlerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/Md5PasswordEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/SecurityHandlerUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/WebSecurityConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/WebSecurityConfig$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/WebSecurityConfig$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/WebSecurityConfig$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/WebSecurityConfig$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/classes/com/zcy/blog/security/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-apply/target/test-classes/com/zcy/blog/BlogApplyApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/blog-article.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/blog-article-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/controller/ArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/controller/CategoryOfArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/controller/TagOfArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/controller/TaskController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/controller/test2Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/Article.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/ArticleTag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/CategoryOfArticle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/IllustrationOfArticle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/TagOfArticle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/pojo/ArticleListQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/entity/pojo/CategoryListQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/mapper/ArticleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/mapper/ArticleTagMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/mapper/CategoryOfArticleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/mapper/IllustrationOfArticleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/mapper/TagOfArticleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/ArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/ArticleTagService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/CategoryOfArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/IllustrationOfArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/TagOfArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/impl/ArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/impl/ArticleTagServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/impl/CategoryOfArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/impl/IllustrationOfArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/com/zcy/blog/service/impl/TagOfArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/mapper/ArticleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/mapper/CategoryOfArticleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/classes/mapper/TagOfArticleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-article/target/test-classes/com/zcy/blog/BlogArticleApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-back.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/blog-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/blog-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/config/redis/ApplicationContextHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/config/redis/RedisCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/config/redis/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/entity/UserRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/mapper/RoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/mapper/UserRoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/service/UserRoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/service/impl/UserRoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/utils/FileUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/utils/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/com/zcy/blog/utils/ResultArgs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/classes/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-common/target/test-classes/com/zcy/blog/BlogCommonApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/BrowserSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/BrowserSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/aspect/GlobalLogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/aspect/GlobalLogHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/handler/MetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/config/handler/MetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-apply/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-apply/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-common/src/main/java/com/zcy/blog/config/redis/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-common/src/main/java/com/zcy/blog/config/redis/RedisCache.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="Tag Library Descriptor" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1ucaM6Shg46UIAYH1ST6VMhzNhQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/系统默认/桌面/备份/mynote/blog/blog-back&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3bba5343f5a17f9441e1ec1e94f33d60&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\系统默认\桌面\备份\mynote\blog\blog-back" />
+      <recent name="F:\mynote\blog\blog-back\blog-apply\src\main\resources\static" />
+      <recent name="F:\mynote\blog\blog-back\blog-apply\src\main\resources\static\" />
+      <recent name="F:\mynote\blog\blog-back\blog-apply\src\main\resources\static\blog" />
+      <recent name="F:\mynote\blog\blog-back\blog-apply\src\main\resources\static\front" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\mynote\blog\blog-back\blog-apply\src\main\resources\static\front" />
+      <recent name="F:\mynote\blog\luyouqi-blog-back-master\blog-back\blog-common\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApplyApplication">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogApplyApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-apply" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zcy.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zcy.blog" />
+      <option name="MAIN_CLASS_NAME" value="com.zcy.blog.BlogApplyApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogArticleApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-article" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zcy.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zcy.blog" />
+      <option name="MAIN_CLASS_NAME" value="com.zcy.blog.BlogArticleApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog-apply" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zcy.blog.BlogApplyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/blog-apply/src/test/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BlogApplyApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.BlogArticleApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b36f3732-300f-483a-a855-98ed11ea3bd4" name="Default Changelist" comment="" />
+      <created>1624967279639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624967279639</updated>
+      <workItem from="1624967288425" duration="5611000" />
+      <workItem from="1624973100112" duration="50000" />
+      <workItem from="1625025836796" duration="14068000" />
+      <workItem from="1625285856998" duration="101000" />
+      <workItem from="1625907786240" duration="4066000" />
+      <workItem from="1626072772694" duration="8821000" />
+      <workItem from="1626096475654" duration="141000" />
+      <workItem from="1626926932499" duration="3531000" />
+      <workItem from="1627364832069" duration="801000" />
+      <workItem from="1627983896407" duration="12847000" />
+      <workItem from="1628042286233" duration="183000" />
+      <workItem from="1628043083051" duration="2392000" />
+      <workItem from="1629022403373" duration="1297000" />
+      <workItem from="1654179740113" duration="7116000" />
+      <workItem from="1654218734347" duration="3177000" />
+    </task>
+    <task id="LOCAL-00001" summary="博客后台">
+      <created>1624971149285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624971149286</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加观看数">
+      <created>1625036428073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625036428073</updated>
+    </task>
+    <task id="LOCAL-00003" summary="定时清理文章">
+      <created>1625912087818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625912087818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="博客后台" />
+    <MESSAGE value="增加观看数" />
+    <MESSAGE value="定时清理文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时清理文章" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-common/src/main/java/com/zcy/blog/utils/FileUtil.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/LoginFailureHandlerImpl.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/WebSecurityConfig.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-common/src/main/java/com/zcy/blog/service/impl/UserServiceImpl.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/AccessDeniedHandlerImpl.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/Md5PasswordEncoder.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/Md5PasswordEncoder.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-apply/src/main/java/com/zcy/blog/security/CustomAuthenticationFilter.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-article/src/main/java/com/zcy/blog/service/impl/ArticleServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
